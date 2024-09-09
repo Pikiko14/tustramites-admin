@@ -1,0 +1,43 @@
+.ant-modal {
+    margin: 0px;
+    top: 0px;
+    padding-bottom: 0px;
+    height: 100vh;
+    width: 100% !important;
+    max-width: 100% !important;
+    .ant-modal-content {
+        border-radius: 0px !important;
+        height: 100vh;
+        .ant-modal-body {
+            height: calc(100vh - 110px);
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: $device-md) {
+    .ant-modal-wrap {
+        background-color: initial;
+    }
+
+    .ant-modal {
+        margin: 8px auto;
+        top: 100px;
+        padding-bottom: 24px;
+        width: 520px !important;
+        height: initial !important;
+        .ant-modal-header {
+            border-radius: 10px 10px 0px 0px !important;
+        }
+        .ant-modal-content {
+            border-radius: 10px !important;
+            height: initial;
+            .ant-modal-body {
+                height: initial;
+                width: initial;
+            }
+        }
+    }
+}
+

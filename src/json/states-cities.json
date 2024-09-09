@@ -1,0 +1,59 @@
+[
+  {
+    "state": "GUAYAS",    
+	"cities": [
+	  "GUAYAQUIL",
+	  "MILAGRO"
+	]
+  },
+  {
+    "state": "PICHINCHA",    
+	"cities": [
+	  "QUITO"
+	]
+  },
+  {
+    "state": "AZUAY",    
+	"cities": [
+	  "CUENCA"
+	]
+  },
+  {
+    "state": "SANTO DOMINGO",    
+	"cities": [
+	  "SANTO DOMINGO DE LOS COLORADOS"
+	]
+  },
+  {
+    "state": "EL ORO",    
+	"cities": [
+	  "MACHALA"
+	]
+  },
+  {
+    "state": "MANABI",    
+	"cities": [
+	  "MANTA",
+	  "PORTOVIEJO"
+	]
+  },
+  {
+    "state": "ESMERALDAS",    
+	"cities": [
+	  "ESMERALDAS",
+	  "ELOY ALFARO"
+	]
+  },
+  {
+    "state": "TUNGURAHUA",    
+	"cities": [
+	  "AMBATO"
+	]
+  },
+  {
+    "state": "IMBABURA",    
+	"cities": [
+	  "IBARRA"
+	]
+  }
+]

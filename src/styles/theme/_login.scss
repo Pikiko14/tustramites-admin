@@ -1,0 +1,80 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    //background-image: url(/assets/images/fondo.png);
+    background-size: cover;
+    .login-content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login-back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            opacity: 0.6;
+        }
+        .login-logo{
+            width: 40%;
+            z-index: 1;
+            padding: 2%;
+            img{
+                width: 100%;
+            }
+        }
+        .login-panel{
+            background-color: white;
+            width: 30%;
+            z-index: 1;
+            border-radius: 10px;
+            padding: 20px 20px;
+            .subtitle{
+                font-size: 0.8rem;
+                margin-top: 5px;
+                margin-bottom: 40px;
+                color: #616161;
+            }
+            .autor{
+                text-align: center;
+                margin-top: 40px;
+                p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    color: #616161;
+                    padding: 0px;
+                    margin: 0px;
+                    img{
+                        height: 20px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $device-md) {
+    .login{
+        .login-content{
+            .login-panel{
+                width: 80% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $device-lg) {
+    .login{
+        .login-content{
+            flex-direction: column;
+            .login-panel{
+                width: 60%;
+            }
+        }
+    }
+}

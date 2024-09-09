@@ -1,0 +1,145 @@
+.itemchat {
+    display: flex;
+    padding: 10px;
+    
+    .chat-list-info {
+        margin-left: 10px;
+        width: calc(100% - 60px);
+        h3, p {
+            padding: 0px;
+            margin: 0px;
+        }
+        h3 {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 0.7rem;
+            font-style: italic;
+            color: #ccc;
+        }
+    }
+}
+
+
+.chat {
+    display: flex;
+    height: 80vh;
+    .room-list {
+        width: 300px;
+        border-right: 1px solid #ebebeb;
+        ul {
+            width: 100%;
+            padding: 20px 10px;
+            li {
+                @extend .itemchat;
+                .chat-list-info {
+                    border-bottom: 1px solid #ebebeb;
+                    padding-bottom: 5px;
+                }
+            }
+            li:hover {
+                background-color: #fff3e0;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .room {
+        width: calc(100% - 300px);
+        height: 80vh;
+        background-color: #ebebeb;
+        border-radius: 0px 20px 20px 0px;
+        display: grid;
+        grid-template-rows: 1fr 8fr 1fr;
+
+        .room-header {
+            background-color: white;
+            border-radius: 0px 20px 0px 0px;
+            @extend .itemchat;
+            align-items: center;
+        }
+
+        .room-messages {
+            display: flex;
+            overflow-y: auto;
+            ul {
+                width: 100%;
+                padding: 20px 10px;
+                .burbuje {
+                    display: flex;
+                    padding: 5px 0px;
+                    div {
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 0.9rem;
+                        span {
+                            font-size: 0.6rem;
+                            font-style: italic;
+                            color: #ccc;
+                        }
+                    }
+                }
+                .other {
+                    div {
+                        background-color: #e3f2fd;
+                        
+                    }
+                }
+                .me {
+                    display: flex;
+                    justify-content: flex-end;
+                    div {
+                        background-color: #fff3e0;
+                        text-align: end;
+                        span {
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+        }
+
+        .room-input {
+            background-color: white;
+            border-radius: 0px 0px 20px 0px;
+            form {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                align-items: center;
+            
+                .ant-form-item {
+                    width: 90%;
+                }
+                button {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: $primary;
+                    color: white;
+                }
+            }
+            
+        }
+    }
+}
+
+.chat-empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    svg {
+        color: #ccc;
+        font-size: 5.0rem;
+    }
+    h2 {
+        color: #ccc;
+        font-style: italic;
+    }
+}
