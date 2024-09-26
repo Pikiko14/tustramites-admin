@@ -1,35 +1,78 @@
 * {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	border: none;
-	outline: none;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
-html, body {
-	background-color: #f6f7f9;
-}
-
-@font-face {
-	font-family: 'Menticula';
-	src: url(./font/MeticulaRegular.otf);
+html,
+body {
+  background-color: #f6f7f9;
 }
 
 @font-face {
-	font-family: 'Menticula';
-	src: url(./font/MeticulaBold.otf);
-	font-weight: bold;
+  font-family: "Menticula";
+  src: url(./font/MeticulaRegular.otf);
 }
 
 @font-face {
-	font-family: 'Menticula';
-	src: url(./font/MeticulaMedium.otf);
+  font-family: "Menticula";
+  src: url(./font/MeticulaBold.otf);
+  font-weight: bold;
 }
 
-body, h1, h2, h3, h4, h5, p, a, button, input, span {
-    font-family: 'Menticula' !important;
+@font-face {
+  font-family: "Menticula";
+  src: url(./font/MeticulaMedium.otf);
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+button,
+input,
+span {
+  font-family: "Menticula" !important;
+}
 
+.section-prices {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  .button {
+    display: flex;
+    flex-direction: row;
+	gap: 10px;
+  }
+  .form-prices {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+	width: 100%;
+
+    .form-prices-item {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+	  flex: 1;
+	  width: 100%;
+	  .form-prices-item2 {
+		display: flex;
+		width: 200px;
+		flex-direction: column;
+	  }
+	}
+  }
+  .ant-select  {
+	width: 200px;
+  }
+}
