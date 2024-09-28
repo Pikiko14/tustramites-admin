@@ -56,6 +56,7 @@ const NotaryPage = (props) => {
                     type_bank_account: form.getFieldValue('type_bank_account'),
                     account_number: form.getFieldValue('account_number'),
                     bank: form.getFieldValue('bank'),
+                    google_map: form.getFieldValue('google_map')
                 }
 
                 if (id) {
@@ -125,7 +126,8 @@ const NotaryPage = (props) => {
                 commissioner: response.data.commissioner,
                 type_bank_account: response.data.type_bank_account,
                 account_number: response.data.account_number,
-                bank: response.data.bank
+                bank: response.data.bank,
+                google_map: response.data.google_map,
             }
 
             form.setFieldsValue(data);
@@ -258,7 +260,7 @@ const NotaryPage = (props) => {
                                 },
                             ]}
                         >
-                            <InputNumber />
+                            <InputNumber style={{ width: '100%' }} />
                         </Form.Item>
                         <Form.Item
                             name="province"
@@ -371,7 +373,7 @@ const NotaryPage = (props) => {
                                 },
                             ]}
                         >
-                            <InputNumber />
+                            <InputNumber style={{ width: '100%' }} />
                         </Form.Item>
 
                         {/*<Form.Item
@@ -407,6 +409,21 @@ const NotaryPage = (props) => {
                                 {
                                     min: 3,
                                     message: 'El nombre del banco debe tener al menos 3 caracteres!',
+                                },
+                            ]}
+                        >
+                            <Input />
+                        </Form.Item>
+
+                        <Form.Item
+                            name="google_map"
+                            id="google_map"
+                            label="Mapa de google"
+                            hasFeedback
+                            rules={[
+                                {
+                                    required: true,
+                                    message: 'Por favor ingrese el mapa',
                                 },
                             ]}
                         >
